@@ -4,6 +4,33 @@
   justify-content: center;
 }
 
+.meal-edit-form {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input, textarea {
+      margin-left: 30px;
+    }
+    button {
+      color: black;
+      margin: 10px;
+      margin-left: 25px;
+      &:hover {
+        border: 1px solid white !important;
+        color: white;
+      }
+    }
+  }
+}
+
 .filterBar {
   text-align: center;
   height: 20vh;

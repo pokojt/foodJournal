@@ -8,12 +8,14 @@ import {Meal} from './meal.model';
   template: `
   <div class="meal-edit-form">
     <h3>Edit Meal:</h3>
-    <input [(ngModel)]="meal.name">
-    <label for="details">Details:</label>
+    <form>
+      <input [(ngModel)]="meal.name">
+      <label for="details">Details:</label>
       <textarea [(ngModel)]="meal.details"></textarea>
-    <label for="calories">Calories:</label>
+      <label for="calories">Calories:</label>
       <input [(ngModel)]="meal.calories">
-    <button (click)="submitEdit()" type="button" id="submitEditButton">Submit Edit</button>
+      <button (click)="submitEdit()" type="button" id="submitEditButton">Submit Edit</button>
+    </form>
   </div>
   `
 })
