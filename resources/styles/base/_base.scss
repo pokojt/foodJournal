@@ -14,6 +14,13 @@ html, body {
   margin: 0px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.lead {
+  letter-spacing: 1px;
+}
 
 
 

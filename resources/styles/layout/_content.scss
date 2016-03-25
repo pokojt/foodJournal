@@ -2,15 +2,30 @@
 .new-meal-form {
   display: flex;
   justify-content: center;
-  button {
-    border: none;
+}
+
+.filterBar {
+  text-align: center;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:focus {
+    outline: none;
+  }
+  select {
     background-color: rgba(255,255,255, .8);
-    padding: 0px 30px;
-    color: gray;
-    height: 31px;
-    margin-top: 5px;
-    border-radius: 2px;
-    margin-left: 5px;
+    color: darken(gray, 10%);
+    border: none;
+    margin: 10px auto;
+    text-align: center;
+    height: 30px;
+    width: 140px;
+  }
+  span {
+    font-size: 20px;
+    opacity: .6;
+    color: white;
   }
 }
 
@@ -22,6 +37,9 @@ input, textarea {
   text-align: center;
   height: 30px;
   border-radius: 2px;
+  &:focus {
+    outline: none;
+  }
 }
 
 textarea {
@@ -29,6 +47,20 @@ textarea {
 }
 
 
+button {
+  border: none;
+  background-color: rgba(255,255,255, .8);
+  padding: 0px 30px;
+  color: gray;
+  height: 31px;
+  margin-top: 5px;
+  border-radius: 2px;
+  margin-left: 5px;
+  &:hover {
+    background-color: rgba(0,0,0, .8);
+    color: white;
+  }
+}
 
 
 .mealItem {
