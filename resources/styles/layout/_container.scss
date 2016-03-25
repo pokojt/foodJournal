@@ -1,0 +1,11 @@
+.pageWrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+body {
+  background: url("../../resources/img/background.png") no-repeat center center fixed;
+  background-size: cover;
+}

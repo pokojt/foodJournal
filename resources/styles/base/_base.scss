@@ -15,26 +15,11 @@ html, body {
 }
 
 
+
+
 /**
  * Basic styles for links
  */
 a {
   text-decoration: none;
-}
-
-h1 {
-  color: green;
-}
-
-.selected{
-  color: #22bdf0;;
-}
-
-.selected *{
-  color: #22bdf0;
-  display: block !important;
-}
-
-.mealItem div{
-  display: none;
 }

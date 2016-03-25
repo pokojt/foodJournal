@@ -6,7 +6,7 @@ import { Component, EventEmitter } from 'angular2/core';
   outputs: ['onSubmitNewMeal'],
   template: `
   <div class="new-meal-form">
-    <input placeholder="Meal Name" #newName>
+    <input placeholder="Food Name" #newName>
     <textarea placeholder="Details" #newDetails></textarea>
     <input placeholder="Calories" type="number" #newCalories>
     <button (click)="addMeal(newName, newDetails, newCalories)" type="button" id="addMealButton">Add Meal</button>
@@ -21,7 +21,7 @@ export class NewMealComponent {
   addMeal(userFood: HTMLInputElement, userDetails: HTMLTextAreaElement, userCalories: HTMLInputElement) {
     var newMeal = new Meal(userFood.value, userDetails.value, parseInt(userCalories.value));
     this.onSubmitNewMeal.emit(newMeal);
-    
+
     userFood.value="";
     userDetails.value="";
     userCalories.value="";

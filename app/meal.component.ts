@@ -8,7 +8,7 @@ import { EditMealDetailsComponent } from './edit-meal-details.component';
   directives: [EditMealDetailsComponent],
   template: `
     <div class="mealItem">
-      <h3>{{ meal.name }}</h3>
+      <h4>{{ meal.name }}</h4>
       <div class="mealDetails">
         <p>{{ meal.details }}</p>
         <p>{{ meal.calories}} Calories</p>

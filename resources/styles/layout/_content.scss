@@ -1,10 +1,52 @@
-.selected {
-  color: #22bdf0;
+
+.new-meal-form {
+  display: flex;
+  justify-content: center;
+  button {
+    border: none;
+    background-color: rgba(255,255,255, .8);
+    padding: 0px 30px;
+    color: gray;
+    height: 31px;
+    margin-top: 5px;
+    border-radius: 2px;
+    margin-left: 5px;
+  }
 }
+
+input, textarea {
+  background-color: rgba(255,255,255, .8);
+  color: black;
+  border: none;
+  margin: 5px;
+  text-align: center;
+  height: 30px;
+  border-radius: 2px;
+}
+
+textarea {
+  padding-top: 5px;
+}
+
+
 
 
 .mealItem {
   &:hover {
     cursor: pointer;
   }
+}
+
+
+.selected{
+  color: #22bdf0;;
+}
+
+.selected *{
+  color: #22bdf0;
+  display: block !important;
+}
+
+.mealItem div{
+  display: none;
 }
