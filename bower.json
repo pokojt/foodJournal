@@ -1,0 +1,21 @@
+{
+  "name": "angular2-skeleton-app",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Taylor Pokoj <pokojt@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
