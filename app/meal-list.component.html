@@ -1,0 +1,6 @@
+<meal-display *ngFor="#currentMeal of mealList"
+  (click)="mealClicked(currentMeal)"
+  [class.selected]="currentMeal === selectedMeal"
+  [meal]="currentMeal">
+  {{ currentMeal.name }}
+</meal-display>

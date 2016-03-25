@@ -5,7 +5,9 @@ import { Component, EventEmitter } from 'angular2/core';
   selector: 'meal-display',
   inputs: ['meal'],
   template: `
-    <h3>{{ meal.name }}</h3>
+    <div class="mealItem">
+      <h3>{{ meal.name }}</h3>
+    </div>
   `
 })
 export class MealComponent {
