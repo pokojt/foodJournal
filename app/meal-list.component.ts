@@ -1,16 +1,19 @@
 import { Meal } from './meal.model';
 import { Component, EventEmitter } from 'angular2/core';
+import { MealComponent } from './meal-display.component';
 
 @Component({
   selector: 'meal-list',
   inputs: ['mealList'],
   outputs: ['onMealSelect'],
+  directives: [MealComponent],
   template:  `
-    <h3 *ngFor="#currentMeal of mealList"
+    <meal-display *ngFor="#currentMeal of mealList"
     (click)="mealClicked(currentMeal)"
-    [class.selected]="currentMeal === selectedMeal">
+    [class.selected]="currentMeal === selectedMeal"
+    [meal]="currentMeal">
     {{ currentMeal.name }}
-    </h3>
+    </meal-display>
   `
 })
 export class MealListComponent {

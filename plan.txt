@@ -1,15 +1,21 @@
 1. Decide the MODEL. --> Meal. created with export class Meal
+    DONE
 
 2. Decide the ROOT COMPONENT. (AppComponent). What will this do?
-  - show list of meals
+    DONE - show list of meals
 
 3. Decide other COMPONENTS.
-  - meal list component
-  - meal display component - to display one meal and to show details besides name
+    DONE - meal list component
+    DONE - meal display component -
+  - to display meal details when clicked
   - add meal component
   - edit meal Component
 
   - pipe healthy/ not healthy / all
+
+
+
+
 
 
 - I want to log a food I have eaten by submitting a form with its name, calories and details.
