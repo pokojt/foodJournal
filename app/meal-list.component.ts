@@ -23,11 +23,13 @@ import {HealthyPipe} from './healthy.pipe';
     </div>
 
     <h3> Your Meals </h3>
-    <meal-display *ngFor="#currentMeal of mealList | healthy:filterHealthy"
-      (click)="mealClicked(currentMeal)"
-      [class.selected]="currentMeal === selectedMeal"
-      [meal]="currentMeal">
-    </meal-display>
+    <div class="mealList">
+      <meal-display *ngFor="#currentMeal of mealList | healthy:filterHealthy"
+        (click)="mealClicked(currentMeal)"
+        [class.selected]="currentMeal === selectedMeal"
+        [meal]="currentMeal">
+      </meal-display>
+    </div>
   `
 })
 export class MealListComponent {
