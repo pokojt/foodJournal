@@ -13,7 +13,6 @@ For this project, we were instructed to create a meal tracker app. A user of thi
 - Include a gulp-based asset pipeline with a development server.
 - The app should be structured in a logical way, including some SASS and at least 2 JavaScript files.
 - Use exports in at least one of your JavaScript files
-- It should make an AJAX request and parse the JSON response.
 
 ##Installation
 
