@@ -8,6 +8,7 @@ import {Meal} from './meal.model';
 export class HealthyPipe implements PipeTransform {
   transform(input: Meal[], args) {
     var healthy = args[0];
+    console.log(args[0]);
     if (healthy === "yes") {
       return input.filter(function(meal) {
         return meal.calories < 301;
