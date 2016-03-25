@@ -56,6 +56,8 @@ button {
   margin-top: 5px;
   border-radius: 2px;
   margin-left: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   &:hover {
     background-color: rgba(0,0,0, .8);
     color: white;
@@ -69,13 +71,15 @@ button {
   flex-wrap: wrap;
   .mealItem {
     background-color: rgba(0,0,0, .2);
+    border-radius: 2px;
     padding: 10px;
     width: 200px;
     text-align: center;
+    border: 1px solid white;
     margin: 10px;
-
     &:hover {
       cursor: pointer;
+      background-color: rgba(0,0,0, .7);
     }
   }
 }
@@ -85,13 +89,19 @@ h3 {
   letter-spacing: 2px;
 }
 
-
-.selected{
-  color: #22bdf0;;
+.mealDetails {
+  text-align: center;
+  button {
+    color: black;
+    margin-left: 20px;
+    &:hover {
+      border: 1px solid white;
+      color: white;
+    }
+  }
 }
 
 .selected *{
-  color: #22bdf0;
   display: block !important;
 }
 

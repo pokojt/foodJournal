@@ -16,6 +16,10 @@ import { MealListComponent } from './meal-list.component';
         [mealList]="meals"
         (onMealSelect)="mealWasSelected($event)">
         </meal-list>
+        <div class="footer">
+          <hr>
+          <p>&copy; Copyright 2016 |  Taylor Pokoj</p>
+        </div>
     </div>
   </div>
   `
