@@ -8,6 +8,7 @@ import {Meal} from './meal.model';
     <div class="mealDetails">
       <h4>{{ meal.details }}</h4>
       <p>{{ meal.calories }}</p>
+      <button type="button" id="editMealButton">Edit Meal</button>
     </div>
   `
 })
