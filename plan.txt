@@ -8,11 +8,10 @@
     DONE - meal list component
     DONE - meal display component
     DONE - edit meal Component
+    DONE - add meal Component
+    DONE - display details component
 
-  - to display meal details when clicked
-      *I think for this I should make a separate component that only displays when the current meal is the selected meal. Similar to Edit meal.*
 
-  - add meal component
 
 
   - pipe healthy/ not healthy / all
