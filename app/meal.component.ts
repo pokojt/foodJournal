@@ -9,10 +9,12 @@ import { EditMealDetailsComponent } from './edit-meal-details.component';
   template: `
     <div class="mealItem">
       <h3>{{ meal.name }}</h3>
-      <p>{{ meal.details }}</p>
-      <p>{{ meal.calories}} Calories</p>
+      <div class="mealDetails">
+        <p>{{ meal.details }}</p>
+        <p>{{ meal.calories}} Calories</p>
+        <button (click)="editMeal(meal)" type="button" id="editButton">Edit Meal</button>
+      </div>
     </div>
-    <button (click)="editMeal(meal)" type="button" id="editButton">Edit Meal</button>
 
     <edit-meal-details
      *ngIf="mealToEdit" (onSubmitMealEdit)="submitEdit($event)" [meal]="meal">
